@@ -1,0 +1,41 @@
+.navbar {
+  @include media(phone) {
+    height: 60px !important;
+    line-height: 60px !important;
+  }
+}
+.nav-list {
+  @include media(phone) {
+    display: none;
+  }
+}
+
+.nav-open-btn {
+  @include media(phone) {
+    display: flex;
+  }
+}
+.navbar__menu-title {
+  @include media(phone) {
+    font-size: 16px;
+  }
+}
+.navbar-scrolled {
+  @include media(phone) {
+    padding-left: 14px;
+  }
+}
+/* Only For demo*/
+
+body {
+  @include media(phone) {
+    background-color: rgba($dark-theme-color, 0.5);
+  }
+}
+
+.hero-section,
+.content-section {
+  @include media(phone) {
+    margin-top: 0;
+  }
+}
