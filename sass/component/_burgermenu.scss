@@ -1,82 +1,38 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-
-  overflow-x: hidden;
-}
-a{
-  text-decoration: none;
-  color: $light-theme-color;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-.page__content {
-  position: relative;
-}
-
-
-.page__content {
-  min-height: 100vh;
-
-  background-color: $light-theme-color;
-}
-
-/* navigation styles */
-$nav-width: 300px;
-$nav-bg: $dark-theme-color;
-$nav-padding: 30px;
-
-$nav-list-offset-vert: 45px;
-
-$nav-item-offset-vert: 20px;
-
-$nav-icon-offset-horz: 10px;
-
 .nav {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   bottom: 0;
-
-  width: $nav-width;
-  padding: $nav-padding;
-  box-sizing: border-box;
-
-  background-color: $nav-bg;
+  width: $burgermenu-size;
+  padding: $burgermenu-padding;
+  background-color: $burgermenu-background;
   box-shadow: 4px 0 5px 0 rgba(0, 0, 0, 0.14), 1px 0 10px 0 rgba(0, 0, 0, 0.12), 2px 0 4px -1px rgba(0, 0, 0, 0.3);
-
   opacity: 0;
   visibility: hidden;
-
   z-index: 500;
 }
 
 /* nav list styles */
 .nav__list {
   position: relative;
-
   padding: 0;
-  margin: $nav-list-offset-vert 0 0 0;
-
+  margin: $burgermenu-offset 0 0 0;
   list-style-type: none;
 }
 
 /* nav item styles */
 .nav__item {
   &:not(:last-child) {
-    margin-bottom: $nav-item-offset-vert;
+    margin-bottom: $burgermenu-line-spacing;
   }
 }
 
 /* nav link styles */
 .nav__link {
   @include transition-mix;
-
   display: inline-flex;
   align-items: center;
-
-  color: $light-theme-color;
+  color: $burgermenu-color;
   text-decoration: none;
 
   &:hover {
@@ -87,16 +43,16 @@ $nav-icon-offset-horz: 10px;
 /* nav link icon styles */
 .nav__link-icon {
   position: relative;
-  top: -3px; /* !!!use only with material design icons */
-
-  margin-right: $nav-icon-offset-horz;
+  //top: -3px; /* !!! only for material design icons */
+  font-size: 21px; /* !!!only for fontawesome icons */
+  margin-right: $burgermenu-offset-icon;
 
   color: currentColor;
 }
 
 /* close icon styles */
 .nav__close {
-  @include position-absolute($top: $nav-padding, $right: $nav-padding);
+  @include position-absolute($top: $burgermenu-padding, $right: $burgermenu-padding);
 
   width: 40px;
   height: 25px;
@@ -138,35 +94,26 @@ $nav-icon-offset-horz: 10px;
   }
 }
 
-/* nav open btn styles */
-$nav-open-btn-vert-offset: 30px;
-$nav-open-btn-horz-offset: 30px;
-
-.nav-open-btn {
+.burgerMenu__btn--open {
   //show only with media Phone
   display: none;
-  //@include position-absolute($top: $nav-open-btn-vert-offset, $left: $nav-open-btn-horz-offset);
   @include transition-mix();
-
   width: 35px;
   height: 25px;
-
   overflow: hidden;
   cursor: pointer;
 
-  //used to hide open btn when the nav is opened
+  //used to hide open btn
   &.js-hidden {
     @include transition-mix($duration: 0s);
-
     opacity: 0;
     visibility: hidden;
   }
 }
 
-.nav-open-btn__bar {
+.burgerMenu__btn--open-bar {
   width: 100%;
   height: 5px;
-
   background-color: $dark-theme-color;
   border-radius: 20px;
 
@@ -183,22 +130,21 @@ $nav-open-btn-horz-offset: 30px;
   }
 }
 
-/* Menu: styles */
+// Menu: styles
 .nav {
   @include transition-mix();
-
-//MENU LEFT
-  //left: (-$nav-width);
-//MENU RIGHT
-  right: (-$nav-width);
-
+  //MENU LEFT
+  /* left: (-$burgermenu-size); */
+  //MENU RIGHT
+  right: (-$burgermenu-size);
 
   /* opened styles */
   &.js-opened {
     //MENU LEFT
-    //@include transition-mix($property: left);
-    //left: 0;
-
+    /*
+    @include transition-mix($property: left);
+    left: 0;
+    */
     //MENU right
     @include transition-mix($property: right);
     right: 0;
@@ -214,8 +160,17 @@ $nav-open-btn-horz-offset: 30px;
 
   &.js-opened {
     //Menu Left
-    //transform: scale(0.8) translateX($nav-width / 2);
+    //transform: scale(0.8) translateX($burgermenu-size / 2);
     //Menu Right
-    transform: scale(0.6) translateX(-$nav-width / 2);
+    transform: scale(0.6) translateX(-$burgermenu-size / 2);
   }
+}
+
+.page__content {
+  position: relative;
+}
+
+.page__content {
+  min-height: 100vh;
+  background-color: $light-theme-color;
 }

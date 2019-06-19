@@ -2,7 +2,7 @@
 //CODE TO USE ON YOUR WEBSITE - !!! YOU NEED IT
 
 //hide nav open btn when the nav is open, adding/removing open classes to nav and content
-var navOpenBtn = document.querySelector('.nav-open-btn');
+var navOpenBtn = document.querySelector('.burgerMenu__btn--open');
 var navCloseBtn = document.querySelector('.nav__close');
 var nav = document.querySelector('.nav');
 var pageContent = document.querySelector('.page__content');

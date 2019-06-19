@@ -70,42 +70,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* HELPER*/
 /* COMPONENT*/
 /* line 1, ../sass/component/_burgermenu.scss */
-html,
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-/* line 9, ../sass/component/_burgermenu.scss */
-a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-/* line 15, ../sass/component/_burgermenu.scss */
-.page__content {
-  position: relative;
-}
-
-/* line 20, ../sass/component/_burgermenu.scss */
-.page__content {
-  min-height: 100vh;
-  background-color: #fff;
-}
-
-/* navigation styles */
-/* line 37, ../sass/component/_burgermenu.scss */
 .nav {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 300px;
-  padding: 30px;
-  box-sizing: border-box;
+  width: 18.75rem;
+  padding: 1.875rem;
   background-color: #1c1c1c;
   box-shadow: 4px 0 5px 0 rgba(0, 0, 0, 0.14), 1px 0 10px 0 rgba(0, 0, 0, 0.12), 2px 0 4px -1px rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -114,22 +85,22 @@ a {
 }
 
 /* nav list styles */
-/* line 56, ../sass/component/_burgermenu.scss */
+/* line 16, ../sass/component/_burgermenu.scss */
 .nav__list {
   position: relative;
   padding: 0;
-  margin: 45px 0 0 0;
+  margin: 2.8125rem 0 0 0;
   list-style-type: none;
 }
 
 /* nav item styles */
-/* line 67, ../sass/component/_burgermenu.scss */
+/* line 25, ../sass/component/_burgermenu.scss */
 .nav__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* nav link styles */
-/* line 73, ../sass/component/_burgermenu.scss */
+/* line 31, ../sass/component/_burgermenu.scss */
 .nav__link {
   transition-property: all;
   transition-duration: 0.2s;
@@ -140,34 +111,34 @@ a {
   color: #fff;
   text-decoration: none;
 }
-/* line 82, ../sass/component/_burgermenu.scss */
+/* line 38, ../sass/component/_burgermenu.scss */
 .nav__link:hover {
   color: #fe9000;
 }
 
 /* nav link icon styles */
-/* line 88, ../sass/component/_burgermenu.scss */
+/* line 44, ../sass/component/_burgermenu.scss */
 .nav__link-icon {
   position: relative;
-  top: -3px;
-  /* !!!use only with material design icons */
-  margin-right: 10px;
+  font-size: 21px;
+  /* !!!only for fontawesome icons */
+  margin-right: 0.625rem;
   color: currentColor;
 }
 
 /* close icon styles */
-/* line 98, ../sass/component/_burgermenu.scss */
+/* line 54, ../sass/component/_burgermenu.scss */
 .nav__close {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 1.875rem;
+  right: 1.875rem;
   width: 40px;
   height: 25px;
   cursor: pointer;
   /* close icon elements */
   /* hover effect */
 }
-/* line 107, ../sass/component/_burgermenu.scss */
+/* line 63, ../sass/component/_burgermenu.scss */
 .nav__close:before, .nav__close:after {
   transition-property: all;
   transition-duration: 0.2s;
@@ -181,28 +152,27 @@ a {
   transform-origin: center center;
   background-color: #fff;
 }
-/* line 122, ../sass/component/_burgermenu.scss */
+/* line 78, ../sass/component/_burgermenu.scss */
 .nav__close:before {
   position: absolute;
   top: 0;
   left: 18px;
   transform: rotate(-45deg);
 }
-/* line 127, ../sass/component/_burgermenu.scss */
+/* line 83, ../sass/component/_burgermenu.scss */
 .nav__close:after {
   position: absolute;
   top: 0;
   right: 18px;
   transform: rotate(45deg);
 }
-/* line 134, ../sass/component/_burgermenu.scss */
+/* line 90, ../sass/component/_burgermenu.scss */
 .nav__close:hover:before, .nav__close:hover:after {
   background-color: #fe9000;
 }
 
-/* nav open btn styles */
-/* line 145, ../sass/component/_burgermenu.scss */
-.nav-open-btn {
+/* line 97, ../sass/component/_burgermenu.scss */
+.burgerMenu__btn--open {
   display: none;
   transition-property: all;
   transition-duration: 0.2s;
@@ -213,8 +183,8 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
-/* line 158, ../sass/component/_burgermenu.scss */
-.nav-open-btn.js-hidden {
+/* line 107, ../sass/component/_burgermenu.scss */
+.burgerMenu__btn--open.js-hidden {
   transition-property: all;
   transition-duration: 0s;
   transition-timing-function: linear;
@@ -223,44 +193,48 @@ a {
   visibility: hidden;
 }
 
-/* line 166, ../sass/component/_burgermenu.scss */
-.nav-open-btn__bar {
+/* line 114, ../sass/component/_burgermenu.scss */
+.burgerMenu__btn--open-bar {
   width: 100%;
   height: 5px;
   background-color: #1c1c1c;
   border-radius: 20px;
 }
-/* line 173, ../sass/component/_burgermenu.scss */
-.nav-open-btn__bar:nth-child(1) {
+/* line 120, ../sass/component/_burgermenu.scss */
+.burgerMenu__btn--open-bar:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 177, ../sass/component/_burgermenu.scss */
-.nav-open-btn__bar:nth-child(2) {
+/* line 124, ../sass/component/_burgermenu.scss */
+.burgerMenu__btn--open-bar:nth-child(2) {
   position: absolute;
   top: 10px;
   left: 0;
 }
-/* line 181, ../sass/component/_burgermenu.scss */
-.nav-open-btn__bar:nth-child(3) {
+/* line 128, ../sass/component/_burgermenu.scss */
+.burgerMenu__btn--open-bar:nth-child(3) {
   position: absolute;
   top: 20px;
   left: 0;
 }
 
-/* Menu: styles */
-/* line 187, ../sass/component/_burgermenu.scss */
+/* line 134, ../sass/component/_burgermenu.scss */
 .nav {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
   transition-delay: 0s;
-  right: -300px;
+  /* left: (-$burgermenu-size); */
+  right: -18.75rem;
   /* opened styles */
 }
-/* line 197, ../sass/component/_burgermenu.scss */
+/* line 142, ../sass/component/_burgermenu.scss */
 .nav.js-opened {
+  /*
+  @include transition-mix($property: left);
+  left: 0;
+  */
   transition-property: right;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -270,7 +244,7 @@ a {
   visibility: visible;
 }
 
-/* line 210, ../sass/component/_burgermenu.scss */
+/* line 156, ../sass/component/_burgermenu.scss */
 .page__content {
   transition-property: all;
   transition-duration: 0.2s;
@@ -278,17 +252,23 @@ a {
   transition-delay: 0s;
   transform: scale(1) translateX(0);
 }
-/* line 215, ../sass/component/_burgermenu.scss */
+/* line 161, ../sass/component/_burgermenu.scss */
 .page__content.js-opened {
-  transform: scale(0.6) translateX(-150px);
+  transform: scale(0.6) translateX(-9.375rem);
 }
 
-/* line 1, ../sass/component/_navbar.scss */
-body {
-  margin: 0;
+/* line 169, ../sass/component/_burgermenu.scss */
+.page__content {
+  position: relative;
 }
 
-/* line 4, ../sass/component/_navbar.scss */
+/* line 173, ../sass/component/_burgermenu.scss */
+.page__content {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+/* line 2, ../sass/component/_navbar.scss */
 .navbar {
   display: flex;
   justify-content: center;
@@ -307,85 +287,76 @@ body {
   transition: height 0.5s, line-height 0.5s;
   z-index: 100;
 }
-
-/* line 23, ../sass/component/_navbar.scss */
+/* line 21, ../sass/component/_navbar.scss */
 .navbar__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 95%;
 }
-
-/* line 29, ../sass/component/_navbar.scss */
-.navbar__menu-right {
-  position: relative;
-}
-
-/* line 32, ../sass/component/_navbar.scss */
-.navbar__menu-title {
+/* line 27, ../sass/component/_navbar.scss */
+.navbar__menu--title {
   display: inline-block;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
   font-size: 40px;
 }
-
-/* line 39, ../sass/component/_navbar.scss */
-.navbar-scrolled .navbar__menu-title {
-  font-size: 16px;
+/* line 34, ../sass/component/_navbar.scss */
+.navbar__menu--side-right {
+  position: relative;
 }
-
+/* line 38, ../sass/component/_navbar.scss */
+.navbar__menu--items {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: monospace;
+}
 /* line 43, ../sass/component/_navbar.scss */
-.nav-list {
-  list-style: none;
+.navbar__menu--items * > a {
+  text-decoration: none;
+  color: #fff;
 }
-
 /* line 47, ../sass/component/_navbar.scss */
-.nav-list li {
-  list-style: none;
+.navbar__menu--items-link {
   display: inline-block;
   padding-left: 20px;
 }
-
 /* line 53, ../sass/component/_navbar.scss */
-.navbar-scrolled {
+.navbar__menu-scrolled {
   height: 60px !important;
   line-height: 60px !important;
   display: inline-block;
   padding-left: 50px;
   overflow: hidden;
 }
+/* line 59, ../sass/component/_navbar.scss */
+.navbar__menu-scrolled h1 {
+  font-size: 16px;
+}
 
-/* only for demo*/
-/* line 62, ../sass/component/_navbar.scss */
-.hero-section,
-.content-section {
+/* Page */
+/*----DEMO----*/
+/* line 3, ../sass/page/_demo.scss */
+.demo {
   height: 500px;
   padding: 100px;
   margin-top: 150px;
+  background: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-/* line 69, ../sass/component/_navbar.scss */
-.hero-text,
-.content-text {
+/* line 12, ../sass/page/_demo.scss */
+.demo__content {
   max-width: 550px;
 }
-
-/* line 74, ../sass/component/_navbar.scss */
-.hero-section h1 {
-  color: #333;
+/* line 14, ../sass/page/_demo.scss */
+.demo__content h2 {
+  font-size: 30px;
 }
 
-/* line 78, ../sass/component/_navbar.scss */
-.hero-section p {
-  color: #333;
-}
-
-/* line 82, ../sass/component/_navbar.scss */
-.content-section {
-  background: aqua;
-}
-
-/* line 86, ../sass/component/_navbar.scss */
+/* line 20, ../sass/page/_demo.scss */
 footer {
   height: 200px;
   background: #333;
@@ -401,47 +372,43 @@ footer {
     line-height: 60px !important;
   }
 }
-
 @media (max-width: 599px) {
-  /* line 7, ../sass/responsiv/_media.scss */
-  .nav-list {
+  /* line 8, ../sass/responsiv/_media.scss */
+  .navbar__menu--items {
     display: none;
   }
 }
-
 @media (max-width: 599px) {
   /* line 13, ../sass/responsiv/_media.scss */
-  .nav-open-btn {
-    display: flex;
-  }
-}
-
-@media (max-width: 599px) {
-  /* line 18, ../sass/responsiv/_media.scss */
-  .navbar__menu-title {
+  .navbar__menu--title {
     font-size: 16px;
   }
 }
+@media (max-width: 599px) {
+  /* line 18, ../sass/responsiv/_media.scss */
+  .navbar__menu-scrolled {
+    padding-left: 14px;
+  }
+}
 
 @media (max-width: 599px) {
-  /* line 23, ../sass/responsiv/_media.scss */
-  .navbar-scrolled {
-    padding-left: 14px;
+  /* line 26, ../sass/responsiv/_media.scss */
+  .burgerMenu__btn--open {
+    display: flex;
   }
 }
 
 /* Only For demo*/
 @media (max-width: 599px) {
-  /* line 30, ../sass/responsiv/_media.scss */
+  /* line 34, ../sass/responsiv/_media.scss */
   body {
     background-color: rgba(28, 28, 28, 0.5);
   }
 }
 
 @media (max-width: 599px) {
-  /* line 36, ../sass/responsiv/_media.scss */
-  .hero-section,
-  .content-section {
+  /* line 40, ../sass/responsiv/_media.scss */
+  .demo {
     margin-top: 0;
   }
 }

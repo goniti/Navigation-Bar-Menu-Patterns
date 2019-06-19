@@ -3,38 +3,41 @@
     height: 60px !important;
     line-height: 60px !important;
   }
-}
-.nav-list {
-  @include media(phone) {
-    display: none;
+  //navbar menu
+  &__menu {
+    &--items {
+      @include media(phone) {
+        display: none;
+      }
+    }
+    &--title {
+      @include media(phone) {
+        font-size: 16px;
+      }
+    }
+    &-scrolled {
+      @include media(phone) {
+        padding-left: 14px;
+      }
+    }
   }
 }
-
-.nav-open-btn {
+// Show button burger menu on phone
+.burgerMenu__btn--open {
   @include media(phone) {
     display: flex;
   }
 }
-.navbar__menu-title {
-  @include media(phone) {
-    font-size: 16px;
-  }
-}
-.navbar-scrolled {
-  @include media(phone) {
-    padding-left: 14px;
-  }
-}
-/* Only For demo*/
 
+
+/* Only For demo*/
 body {
   @include media(phone) {
     background-color: rgba($dark-theme-color, 0.5);
   }
 }
 
-.hero-section,
-.content-section {
+.demo {
   @include media(phone) {
     margin-top: 0;
   }

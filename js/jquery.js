@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $(window).scroll(function () {
       if ($(document).scrollTop() >= 100) {
-        $(".navbar").addClass("navbar-scrolled");
+        $(".navbar").addClass("navbar__menu-scrolled");
       } else {
-        $(".navbar").removeClass("navbar-scrolled");
+        $(".navbar").removeClass("navbar__menu-scrolled");
       }
     });
   

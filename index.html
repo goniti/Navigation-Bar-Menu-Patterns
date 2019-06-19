@@ -2,103 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Overpass:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-    <link rel="stylesheet" href="stylesheets/screen.css">
-    <title>BurgerMenu Demo2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/screen.css">
+  <title>Menu Bar</title>
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="navbar__menu">
-          <div class="navbar__menu-left"><h1 class="navbar__menu-title">Site Title</div>
-          <div class="navbar__menu-right">
-    <!--open burger button-->
-    <div class="nav-open-btn">
-        <div class="nav-open-btn__bar"></div>
-        <div class="nav-open-btn__bar"></div>
-        <div class="nav-open-btn__bar"></div>
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar__menu">
+      <div class="navbar__menu--side-left">
+        <h1 class="navbar__menu--title">Site Title</h1>
       </div>
-            <ul class="nav-list">
-              <li><a href="#" class="navbar__menu-link">First Item</a></li>
-              <li><a href="#" class="navbar__menu-link">Second Item</a></li>
-              <li><a href="#" class="navbar__menu-link">Third Item</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="navbar__menu--side-right">
+        <!-- navbar link -->
+        <ul class="navbar__menu--items">
+          <li class="navbar__menu--items-link"><a href="#">First Item</a></li>
+          <li class="navbar__menu--items-link"><a href="#">Second Item</a></li>
+          <li class="navbar__menu--items-link"><a href="#">Third Item</a></li>
+        </ul>
 
-    <!--burger Menu-->
-    <nav class="nav">
-      <!--close button-->
-      <div class="nav__close"></div>
-      <!--burger list-->
-      <ul class="nav__list">
-        <!--burger item-->
-        <li class="nav__item">
-          <!--burger link--><a class="nav__link" href="#" title="Home"><i class="nav__link-icon material-icons">home</i>Home</a>
-        </li>
-        <!--burger item-->
-        <li class="nav__item">
-          <!--burger link--><a class="nav__link" href="#" title="About"><i class="nav__link-icon material-icons">equalizer</i>About</a>
-        </li>
-        <!--burger item-->
-        <li class="nav__item">
-          <!--burger link--><a class="nav__link" href="#" title="Tour"><i class="nav__link-icon material-icons">business_center</i>Tour</a>
-        </li>
-        <!--burger item-->
-        <li class="nav__item">
-          <!--burger link--><a class="nav__link" href="#" title="Settings"><i class="nav__link-icon material-icons">settings</i>Settings</a>
-        </li>
-        <!--burger item-->
-        <li class="nav__item">
-          <!--burger link--><a class="nav__link" href="#" title="Plans"><i class="nav__link-icon material-icons">grade</i>Plans</a>
-        </li>
-        <!--burger item-->
-        <li class="nav__item">
-          <!--burger link--><a class="nav__link" href="#" title="Log In"><i class="nav__link-icon material-icons">perm_identity</i>Log In</a>
-        </li>
-      </ul>
-    </nav>
-    <!--content part-->
-    <div class="page__content">
-  
-      <!--content block-->
-      <div class="content">
-        <div class="hero-section">
-          <div class="container">
-            <div class="hero-text">
-              <h1>Hero Section!</h1>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            </div>
-          </div>
+        <!--burger menu open button--->
+        <div class="burgerMenu__btn--open">
+          <div class="burgerMenu__btn--open-bar"></div>
+          <div class="burgerMenu__btn--open-bar"></div>
+          <div class="burgerMenu__btn--open-bar"></div>
         </div>
-        
-        <div class="content-section">
-          <div class="container">
-            <div class="content-text">
-              <h1>Content Section!</h1>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-            </div>
-          </div>
-        </div>
-        
-         <footer>
-           <div class="container">
-             <p>Footer area</p>
-           </div>
-         </footer>
       </div>
+    </div>
+  </nav>
+
+  <!--burger Menu-->
+  <nav class="nav">
+    <!--burger menu close button--->
+    <div class="nav__close"></div>
+
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="#" title="Home"><i class="nav__link-icon fas fa-home"></i>Home</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#" title="Statistics"><i class="nav__link-icon far fa-chart-bar"></i>Statistics</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#" title="Business"><i class="nav__link-icon fas fa-briefcase"></i>Business</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#" title="Settings"><i class="nav__link-icon fas fa-cog"></i>Settings</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#" title="Bookmark"><i class="nav__link-icon fas fa-calendar-alt"></i>Agenda</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="#" title="Log In"><i class="nav__link-icon fas fa-user"></i>Log In</a>
+      </li>
+    </ul>
+
+  </nav>
+  <!--content page-->
+  <div class="page__content">
+
+    <!-- DEMO -->
+
+    <!--content block-->
+    <section class="demo">
+
+      <div class="demo__content">
+        <h2>This is navigation demonstration !</h2>
+        <p><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam dolorum omnis, eveniet eaque, ea
+          rerum
+          odit expedita aspernatur labore eos, distinctio necessitatibus voluptate? Voluptatem, perferendis? Fugit,
+          ad. Nesciunt, esse.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam dolorum omnis,
+          eveniet eaque, ea rerum
+          odit expedita aspernatur labore eos, distinctio necessitatibus voluptate? Voluptatem, perferendis? Fugit,
+          ad. Nesciunt, esse.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam dolorum omnis,
+          eveniet eaque, ea rerum
+          odit expedita aspernatur labore eos, distinctio necessitatibus voluptate? Voluptatem, perferendis? Fugit,
+          ad. Nesciunt, esse.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam dolorum omnis,
+          eveniet eaque, ea rerum
+          odit expedita aspernatur labore eos, distinctio necessitatibus voluptate? Voluptatem, perferendis? Fugit,
+          ad. Nesciunt, esse.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam dolorum omnis,
+          eveniet eaque, ea rerum
+          odit expedita aspernatur labore eos, distinctio necessitatibus voluptate? Voluptatem, perferendis? Fugit,
+          ad. Nesciunt, esse.</p>
+      </div>
+
+    </section>
+    <!-- Demo Footer -->
+    <footer>
+      <p>Footer area</p>
+    </footer>
   </div>
-      
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="./js/scripts.js"></script>
-<script src="./js/jquery.js"></script>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/3d56dc82ab.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script src="./js/jquery.js"></script>
 
 
 </body>

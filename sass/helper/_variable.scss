@@ -1,5 +1,5 @@
-//COMMON VARIABLES
-$color-none: rgba(0,0,0,0);
+//COLOR
+$color-none: rgba(0, 0, 0, 0);
 $dark-theme-color: #1c1c1c;
 $light-theme-color: #fff;
 $theme-color: #4caf50;
@@ -8,3 +8,12 @@ $theme-color2: #832161;
 $theme-color3: #fe9000;
 $theme-color4: #d72638;
 $accent-theme-color5: #fc448d;
+
+// BURGERMENU PARAMETERS */
+$burgermenu-background: $dark-theme-color;
+$burgermenu-color: $light-theme-color;
+$burgermenu-size: 18.75rem;
+$burgermenu-padding: 1.875rem;
+$burgermenu-offset: 2.8125rem;
+$burgermenu-line-spacing: 1.25rem;
+$burgermenu-offset-icon: 0.625rem;
