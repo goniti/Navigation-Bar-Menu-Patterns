@@ -10,10 +10,18 @@ $theme-color4: #d72638;
 $accent-theme-color5: #fc448d;
 
 // BURGERMENU PARAMETERS */
-$burgermenu-background: $dark-theme-color;
-$burgermenu-color: $light-theme-color;
 $burgermenu-size: 18.75rem;
 $burgermenu-padding: 1.875rem;
 $burgermenu-offset: 2.8125rem;
 $burgermenu-line-spacing: 1.25rem;
 $burgermenu-offset-icon: 0.625rem;
+//color menu
+$burgermenu-background: $dark-theme-color;
+$burgermenu-color: $light-theme-color;
+$burgermenu-color-hover: $theme-color3;
+//position menu
+
+//Menu right
+$burgermenu-right: -$burgermenu-size;
+//Menu left
+$burgermenu-left: $burgermenu-size;

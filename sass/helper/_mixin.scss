@@ -30,3 +30,14 @@
   right: $right;
   bottom: $bottom;
 }
+
+// Burger Menu mixin
+@mixin burgermenu-open-right ($side : 0) {
+  right: $side;
+  @include transition-mix($property: right);
+}
+@mixin burgermenu-open-left ($side : 0) {
+  left: $side;
+  @include transition-mix($property: left);
+}
+
