@@ -149,13 +149,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   top: 1.875rem;
   right: 1.875rem;
+  margin: -15px;
   width: 40px;
   height: 25px;
   cursor: pointer;
   /* close icon elements */
   /* hover effect */
 }
-/* line 70, ../sass/component/_burgermenu.scss */
+/* line 71, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--close:before, .burgerMenu__btn--close:after {
   transition-property: all;
   transition-duration: 0.2s;
@@ -169,25 +170,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform-origin: center center;
   background-color: #fff;
 }
-/* line 84, ../sass/component/_burgermenu.scss */
+/* line 85, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--close:before {
   position: absolute;
   top: 0;
   left: 18px;
   transform: rotate(-45deg);
 }
-/* line 89, ../sass/component/_burgermenu.scss */
+/* line 90, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--close:after {
   position: absolute;
   top: 0;
   right: 18px;
   transform: rotate(45deg);
 }
-/* line 96, ../sass/component/_burgermenu.scss */
+/* line 97, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--close:hover:before, .burgerMenu__btn--close:hover:after {
   background-color: #fe9000;
 }
-/* line 102, ../sass/component/_burgermenu.scss */
+/* line 103, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--open {
   display: none;
   transition-property: all;
@@ -199,7 +200,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   overflow: hidden;
   cursor: pointer;
 }
-/* line 112, ../sass/component/_burgermenu.scss */
+/* line 113, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--open.js-hidden {
   transition-property: all;
   transition-duration: 0s;
@@ -208,33 +209,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: 0;
   visibility: hidden;
 }
-/* line 117, ../sass/component/_burgermenu.scss */
+/* line 118, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--open-bar {
   width: 100%;
   height: 5px;
   background-color: #1c1c1c;
   border-radius: 20px;
 }
-/* line 123, ../sass/component/_burgermenu.scss */
+/* line 124, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--open-bar:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 127, ../sass/component/_burgermenu.scss */
+/* line 128, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--open-bar:nth-child(2) {
   position: absolute;
   top: 10px;
   left: 0;
 }
-/* line 131, ../sass/component/_burgermenu.scss */
+/* line 132, ../sass/component/_burgermenu.scss */
 .burgerMenu__btn--open-bar:nth-child(3) {
   position: absolute;
   top: 20px;
   left: 0;
 }
 
-/* line 139, ../sass/component/_burgermenu.scss */
+/* line 140, ../sass/component/_burgermenu.scss */
 .page__content {
   transition-property: all;
   transition-duration: 0.2s;
@@ -242,7 +243,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition-delay: 0s;
   transform: scale(1) translateX(0);
 }
-/* line 143, ../sass/component/_burgermenu.scss */
+/* line 144, ../sass/component/_burgermenu.scss */
 .page__content.js-opened {
   transform: scale(0.6) translateX(-9.375rem);
 }

@@ -62,6 +62,7 @@
     /* close menu styles */
     &--close {
       @include position-absolute($top: $burgermenu-padding, $right: $burgermenu-padding);
+      margin: -15px;
       width: 40px;
       height: 25px;
       cursor: pointer;
